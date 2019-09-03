@@ -73,8 +73,10 @@ function App() {
             </button>
           </div>
         </div>
-        <p className="App-counter">Counter: {counter}</p>
-        {loading ? 'Loading...' : <CodeBlock code={stateCode} />}
+        <div className="App-code-wrapper">
+          <p className="App-counter">Counter: {counter}</p>
+          {loading ? 'Loading...' : <CodeBlock code={stateCode} />}
+        </div>
         <p>
           Star this on GitHub!
           <br />

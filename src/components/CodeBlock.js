@@ -9,7 +9,12 @@ function CodeBlock({ code: c }) {
 
   return (
     <pre
-      style={{ fontSize: '1rem', boxShadow: '0 5px 10px rgba(0, 0, 0, 0.12)' }}
+      style={{
+        fontSize: '14px',
+        boxShadow: '0 5px 10px rgba(0, 0, 0, 0.12)',
+        whiteSpace: 'pre-wrap',
+        wordBreak: 'break-word',
+      }}
     >
       <code className="language-javascript">{`${c}`}</code>
     </pre>

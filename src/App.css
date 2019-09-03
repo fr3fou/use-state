@@ -63,7 +63,18 @@
   color: black;
 }
 
+.App-code-wrapper {
+  width: 50%;
+}
+
+@media screen and (max-width: 600px) {
+  .App-code-wrapper {
+    width: 100%;
+  }
+}
+
 a {
   color: hotpink;
   text-decoration: none;
 }
+
