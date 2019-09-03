@@ -4,7 +4,6 @@ import './App.css'
 
 function App() {
   const [counter, setCounter] = useState(0)
-  const [n, setN] = useState(0)
 
   return (
     <div className="App">
@@ -37,7 +36,7 @@ function App() {
             className="App-input"
             onChange={e => {
               const val = e.target.value
-              setN(val)
+              setCounter(val)
             }}
             type="number"
           />
