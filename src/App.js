@@ -5,7 +5,7 @@ import './App.css'
 
 function App() {
   const [counter, setCounter] = useState(0)
-  const [loading, setLoading] = useState(true)
+  const [loading, setLoading] = useState(() => true)
   const [stateCode, setStateCode] = useState('')
 
   React.useEffect(() => {
@@ -75,6 +75,13 @@ function App() {
         </div>
         <p className="App-counter">Counter: {counter}</p>
         {loading ? 'Loading...' : <CodeBlock code={stateCode} />}
+        <p>
+          Star this on GitHub!
+          <br />
+          <a target="_blank" href="https://github.com/fr3fou/use-state">
+            fr3fou/use-state
+          </a>
+        </p>
       </header>
     </div>
   )
