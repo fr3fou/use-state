@@ -30,8 +30,6 @@ function useState(initalValue) {
     dispatch({ type: SET_VALUE, payload: v })
   }
 
-  console.log(value)
-
   return [value, setValue]
 }
 
