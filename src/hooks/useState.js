@@ -1,11 +1,7 @@
 import React from 'react'
 
-function reducer(_, value) {
-  return value
-}
-
 function useState(initalValue) {
-  const [value, dispatch] = React.useReducer(reducer, initalValue, iv =>
+  const [value, dispatch] = React.useReducer((_, val) => val, initalValue, iv =>
     typeof iv === 'function' ? iv() : iv
   )
 
