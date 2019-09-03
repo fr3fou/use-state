@@ -12,7 +12,7 @@ function reducer(state, { type, payload }) {
   const handler = actions[type]
 
   if (handler) {
-    handler(state, payload)
+    return handler(state, payload)
   }
 
   return state
@@ -23,7 +23,6 @@ function useState(initalValue) {
 
   const setValue = v => {
     if (typeof v === 'function') {
-      console.log('here')
       dispatch({ type: SET_VALUE, payload: v(value) })
       return
     }
