@@ -54,7 +54,7 @@ function App() {
             }}
           >
             <button
-              style={{ margin: 5, width: '50%' }}
+              style={{ marginRight: 5, width: '50%' }}
               className="App-button"
               onClick={() => {
                 setCounter(v => v + 1)
@@ -63,7 +63,7 @@ function App() {
               +
             </button>
             <button
-              style={{ margin: 5, width: '50%' }}
+              style={{ width: '50%' }}
               className="App-button"
               onClick={() => {
                 setCounter(v => v - 1)
