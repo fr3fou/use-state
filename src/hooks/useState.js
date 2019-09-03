@@ -19,7 +19,9 @@ function reducer(state, { type, payload }) {
 }
 
 function useState(initalValue) {
-  const [value, dispatch] = React.useReducer(reducer, initalValue)
+  const [value, dispatch] = React.useReducer(reducer, initalValue, iv =>
+    typeof iv === 'function' ? iv() : iv
+  )
 
   const setValue = v => {
     if (typeof v === 'function') {
